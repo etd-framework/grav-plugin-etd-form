@@ -1,0 +1,10 @@
+{% extends "forms/field.html.twig" %}
+
+{% do assets.addCss('plugin://etd-form/assets/css/datepicker.min.css', 30) %}
+{% do assets.addJs('plugin://etd-form/assets/js/datepicker.min.js', {'priority': 30, 'group': 'bottom'}) %}
+{% do assets.addJs('plugin://etd-form/assets/js/i18n/datepicker.fr.js', {'priority': 30, 'group': 'bottom'}) %}
+
+{% block input_attributes %}
+    type="text"
+    {{ parent() }}
+{% endblock %}

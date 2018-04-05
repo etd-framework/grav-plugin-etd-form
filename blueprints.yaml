@@ -1,0 +1,27 @@
+name: Etd Form
+version: 0.1.0
+description: Renders special form fields on Grav
+icon: plug
+author:
+  name: ETD Solutions
+  email: support@etd-solutions.com
+homepage: https://github.com/etd-framework/grav-plugin-etd-form
+demo: https://github.com/etd-framework/grav-plugin-etd-form
+keywords: grav, plugin, form
+bugs: https://github.com/etd-framework/grav-plugin-etd-form/issues
+docs: https://github.com/etd-framework/grav-plugin-etd-form/blob/master/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
